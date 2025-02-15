@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Jost:wght@200&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hawar Islands - Manama Tourism</title>
+    <style>
+      body {
+        font-family: "Anton", serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        animation: fadeIn 2s ease-in;
+      }
+      header {
+        background-color: #e60000;
+        color: white;
+        text-align: left;
+        padding: 1.5rem 1.5rem;
+        position: relative;
+        z-index: 1;
+      }
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+      header h1 {
+        font-size: 3rem;
+        margin: 0;
+        animation: slideIn 1s ease-out;
+      }
+      .logo {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        animation: bounce 1.5s infinite alternate;
+      }
+      nav {
+        background-color: #ff4d4d;
+        padding: 15px 30px;
+        z-index: 2;
+        display: flex;
+        gap: 20px;
+        border-radius: 30px;
+        transform: translateY(-100px);
+        animation: navFloat 1s ease-in-out forwards;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 15px 25px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        font-size: 1.2rem;
+      }
+      nav a:hover {
+        background-color: #cc0000;
+        transform: scale(1.1);
+      }
+
+      .heritage-content {
+        text-align: center;
+        padding: 50px;
+        background-size: cover;
+        min-height: 100vh;
+        background-image: url("./images/hawarIslandsBg.jpg");
+      }
+
+      .heritage-content .container {
+        background-color: #333;
+        padding: 30px;
+        max-width: 900px;
+        margin: 0 auto;
+        border-radius: 15px;
+        color: white;
+      }
+
+      .heritage-content img {
+        width: 40rem;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .heritage-content p {
+        font-size: 1.2rem;
+        margin-top: 20px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInContent {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes navFloat {
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        30% {
+          transform: translateY(-10px);
+        }
+        50% {
+          transform: translateY(5px);
+        }
+        70% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Manama Tourism</h1>
+        <img class="logo" src="./images/logo.png" alt="Manama Logo" />
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotel.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </header>
+
+    <div class="heritage-content">
+      <div class="container">
+        <img src="./images/hawarIslands.jpg" alt="Hawar Islands" />
+        <p>
+          The Hawar Islands are a stunning archipelago located off the
+          southeastern coast of Bahrain. These islands are known for their
+          pristine beaches, diverse wildlife, and unspoiled natural beauty. The
+          islands are home to an abundance of migratory birds, making them a
+          significant destination for birdwatchers and nature enthusiasts. The
+          Hawar Islands are also famous for their clear turquoise waters, coral
+          reefs, and diverse marine life, which make them a popular destination
+          for water sports such as diving, snorkeling, and fishing.
+          Historically, the islands have been inhabited by nomadic fishermen,
+          and many of the old fishing villages can still be seen today. The
+          islands are also known for their historical significance, as they were
+          the site of important archaeological discoveries related to ancient
+          Bahrain. In addition to their natural beauty, the Hawar Islands have
+          been designated as a protected area to ensure the conservation of
+          their delicate ecosystem. Visitors to the islands can enjoy the
+          tranquility of this remote location while exploring its rich cultural
+          and natural heritage.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

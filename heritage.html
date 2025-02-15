@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Jost:wght@200&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Heritage Sites - Manama Tourism</title>
+    <style>
+      body {
+        font-family: "Anton", serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        animation: fadeIn 2s ease-in;
+      }
+      header {
+        background-color: #e60000;
+        color: white;
+        text-align: left;
+        padding: 1.5rem 1.5rem;
+        position: relative;
+        z-index: 1;
+      }
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+      header h1 {
+        font-size: 3rem;
+        margin: 0;
+        animation: slideIn 1s ease-out;
+      }
+      .logo {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        animation: bounce 1.5s infinite alternate;
+      }
+      nav {
+        background-color: #ff4d4d;
+        padding: 15px 30px;
+        z-index: 2;
+        display: flex;
+        gap: 20px;
+        border-radius: 30px;
+        transform: translateY(-100px);
+        animation: navFloat 1s ease-in-out forwards;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 15px 25px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        font-size: 1.2rem;
+      }
+      nav a:hover {
+        background-color: #cc0000;
+        transform: scale(1.1);
+      }
+
+      .content {
+        text-align: center;
+        color: white;
+        padding: 50px;
+        background-image: url("./images/heritageBackground.jpg");
+        background-size: cover;
+        min-height: 100vh;
+      }
+
+      .content h1 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+      }
+
+      .content p {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+      }
+
+      .card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card img {
+        width: 100%;
+        height: 25rem;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover img {
+        transform: scale(1.1);
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .card a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 15px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #e60000;
+        font-size: 1.5rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .card a:hover {
+        background-color: #cc0000;
+        color: white;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInContent {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes navFloat {
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        30% {
+          transform: translateY(-10px);
+        }
+        50% {
+          transform: translateY(5px);
+        }
+        70% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Manama Tourism</h1>
+        <img class="logo" src="./images/logo.png" alt="Manama Logo" />
+      </div>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./heritage.html">Heritage</a>
+        <a href="./hotel.html">Hotel Booking</a>
+        <a href="./gallery.html">Gallery</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <h1>Explore Bahrain's Heritage</h1>
+      <p>Discover the cultural and historical gems of Bahrain.</p>
+      <div class="card-container">
+        <div class="card">
+          <img src="./images/qalatAlBahrain.jpg" alt="Qal'at al-Bahrain" />
+          <a href="./qalat_al_bahrain.html">Qal'at al-Bahrain</a>
+        </div>
+        <div class="card">
+          <img src="./images/pearlingPath.jpg" alt="Bahrain Pearling Path" />
+          <a href="./pearling_path.html">Bahrain Pearling Path</a>
+        </div>
+        <div class="card">
+          <img src="./images/alFatehMosque.jpg" alt="Al Fateh Grand Mosque" />
+          <a href="./al_fateh_mosque.html">Al Fateh Grand Mosque</a>
+        </div>
+        <div class="card">
+          <img src="./images/hawarIslands.jpg" alt="Hawar Islands" />
+          <a href="./hawar_islands.html">Hawar Islands</a>
+        </div>
+        <div class="card">
+          <img src="./images/babElBahrainSouk.jpg" alt="Bab-el Bahrain Souk" />
+          <a href="./bab_el_bahrain_souk.html">Bab-el Bahrain Souk</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
